@@ -53,6 +53,7 @@ const PostDetail = ({ post }) => {
             height={obj.height}
             width={obj.width}
             src={obj.src}
+            layout="fill"
           />
         );
       default:

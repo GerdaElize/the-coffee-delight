@@ -17,7 +17,7 @@ const AdjacentPostCard = ({ post, position }) => (
         {post.title}
       </p>
     </div>
-    <Link href={`/post/${post.slug}`}>
+    <Link href={`/post/${post.slug}`} passHref>
       <span className="z-10 cursor-pointer absolute w-full h-full" />
     </Link>
     {position === "LEFT" && (

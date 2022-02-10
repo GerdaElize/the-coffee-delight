@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 
 import { getCategories } from "../services";
+import Image from "next/image";
 
 const Header = () => {
   const [categories, setCategories] = useState([]);
@@ -16,19 +17,25 @@ const Header = () => {
     <div className="container max-auto px-10 mb-8">
       <div className="border-b w-full inline-block border-grey-400 py-8">
         <div className="md:float-left block">
-          <Link href="/">
+          <Link href="/" passHref>
             <span className="cursor-pointer font-bold texg-4xl text-white">
-              <img
+              <Image
                 className="relative w-15 h-12 mb-0"
                 src="/images/logo.png"
                 alt="logo"
+                width="200px"
+                height="50px"
               />
             </span>
           </Link>
         </div>
         <div className="hidden mf:float-left md:contents">
           {categories.map((category) => (
-            <Link key={category.slug} href={`/category/${category.slug}`}>
+            <Link
+              key={category.slug}
+              href={`/category/${category.slug}`}
+              passHref
+            >
               <span className="md:float-right mt-2 align-middle text-white ml-4 font-semibold cursor-pointer">
                 {category.name}
               </span>

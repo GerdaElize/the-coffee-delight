@@ -28,6 +28,7 @@ function Footer() {
           <a
             href="https://www.instagram.com/thecoffeedelight/"
             target="_blank"
+            rel="noopener noreferrer"
             className="w-10 h-10 rounded-full bg-white-500 hover:bg-gray-600 mx-1 inline-block pt-1"
           >
             {" "}
@@ -36,6 +37,7 @@ function Footer() {
           <a
             href="https://www.facebook.com/The-Coffee-Delight-100264575926449"
             target="_blank"
+            rel="noopener noreferrer"
             className="w-10 h-10 rounded-full bg-white-500 hover:bg-gray-600 mx-1 inline-block pt-1"
           >
             {" "}
@@ -44,6 +46,7 @@ function Footer() {
           <a
             href="https://www.youtube.com/channel/UCiuwoW7-l0ZME7BhTr1Psxw"
             target="_blank"
+            rel="noopener noreferrer"
             className="w-10 h-10 rounded-full bg-white-500 hover:bg-gray-600 mx-1 inline-block pt-1"
           >
             {" "}
